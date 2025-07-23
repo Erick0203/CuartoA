@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ordenador en Arquitectura de Computadora</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <link rel="stylesheet" href="estilos.css" />
+  <script defer src="java.js"></script>
+
+  <style>
+    .contenedor {
+      display: grid;
+      grid-template-columns: 25% 50% 25%;
+      gap: 10px;
+      padding: 20px;
+    }
+
+    .izquierda, .centro, .derecha {
+      padding: 10px;
+      background-color: #f4f4f4;
+      border-radius: 10px;
+    }
+
+    .caracteristicas {
+      grid-column: span 3;
+      margin-top: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+    }
+
+    .reflexion {
+      margin-top: 15px;
+      font-style: italic;
+      background: #e7f0f9;
+      padding: 10px;
+      border-left: 4px solid #2196f3;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    h3 {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1><i class="fas fa-laptop-code"></i> Ordenador</h1>
+  </header>
+
+ <nav class="navbar">
+    <a href="Hardware.html" target="_blank"><i class="fas fa-microchip"></i> Hardware</a>
+    <a href="Software.html"><i class="fas fa-code"></i> Software</a>
+    <a href="Ordenador.html"><i class="fas fa-laptop"></i> Ordenador</a>
+    <a href="Programacion.html"><i class="fas fa-keyboard"></i> Programación</a>
+  </nav>
+
+  <main>
+    <section class="marquesina-container">
+      <hr />
+      <marquee class="marquesina">¡Descubre el corazón de la arquitectura computacional: El Ordenador!</marquee>
+      <hr />
+    </section>
+
+    <div class="contenedor">
+      
+      <!-- IZQUIERDA: Tipos de ordenadores -->
+      <div class="izquierda">
+        <h2>Tipos de Ordenadores</h2>
+        <ul>
+          <li>🖥️ Superordenadores</li>
+          <li>💻 Ordenadores personales</li>
+          <li>🗄️ Mainframes</li>
+          <li>🖨️ Estaciones de trabajo</li>
+          <li>📱 Dispositivos embebidos</li>
+        </ul>
+        <img src="https://wayofflifermucf.wordpress.com/wp-content/uploads/2014/10/o.jpg" alt="Tipos de ordenadores"/>
+      </div>
+
+      <!-- CENTRO: Estructura -->
+      <div class="centro">
+        <h2>Estructura del Ordenador</h2>
+        <p>La estructura del ordenador en arquitectura computacional se basa en el modelo de Von Neumann. Incluye:</p>
+        <ul>
+          <li><strong>Unidad Central de Procesamiento (CPU):</strong> Ejecuta instrucciones.</li>
+          <li><strong>Memoria Principal (RAM):</strong> Almacena datos e instrucciones temporales.</li>
+          <li><strong>Dispositivos de Entrada/Salida:</strong> Permiten la interacción con el usuario.</li>
+          <li><strong>Bus de datos y control:</strong> Conectan los componentes.</li>
+        </ul>
+        <center>
+        <img src="https://unicrom.com/wp-content/uploads/estructura-computadora-ordenador.png" alt="Estructura de un ordenador"/>
+        </center>
+      </div>
+
+      <!-- DERECHA: Video y reflexión -->
+      <div class="derecha">
+        <h2>Video Explicativo</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CwFhUE8G88I?si=GOkbh4zZaQnRUOQR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        <div class="reflexion">
+          <h3>Reflexión:</h3>
+          <p>
+            Comprender la arquitectura de un ordenador nos permite optimizar su uso y apreciar la complejidad que hace posible la computación moderna.
+          </p>
+        </div>
+      </div>
+
+      <!-- ABAJO: Características -->
+      <div class="caracteristicas">
+        <h2>Características de un Ordenador</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>🔹 Característica</th>
+              <th>🔍 Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Velocidad</td>
+              <td>Ejecuta millones de instrucciones por segundo.</td>
+            </tr>
+            <tr>
+              <td>Precisión</td>
+              <td>Alta exactitud en los resultados computacionales.</td>
+            </tr>
+            <tr>
+              <td>Almacenamiento</td>
+              <td>Capacidad de guardar grandes cantidades de datos.</td>
+            </tr>
+            <tr>
+              <td>Automatización</td>
+              <td>Realiza tareas sin intervención humana constante.</td>
+            </tr>
+            <tr>
+              <td>Versatilidad</td>
+              <td>Puede ejecutar distintos programas para diferentes fines.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <hr />
+    <p>
+      Fuente: 
+      <a href="https://paginaspersonales.deusto.es/airibar/ed_digital/INF/Intro/PC_componentes.html" target="_blank">
+        Ordenador
+      </a>
+    </p>
+    <p>🌟 Página elaborada por - Erick Anaguano 🌟</p>
+    <hr />
+    <a href="index.html" class="boton-icono" title="Volver al Inicio">➜</a>
+  </footer>
+
+</body>
+</html>

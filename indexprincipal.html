@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Arquitectura de Computadoras</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2019/08/fondo-pantalla-animado-windows_0.jpg?tf=3840x');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      font-family: 'Arial', sans-serif;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 4em;
+      margin: 0;
+      animation: mover 3s infinite alternate ease-in-out;
+      text-shadow: 3px 3px 6px #000;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin: 20px 0;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    a.boton-icono {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.2);
+      border: 2px solid white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      color: rgb(241, 153, 153);
+      font-size: 2em;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    a.boton-icono:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 1em;
+      color: #ffffff;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    @keyframes mover {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-20px); }
+    }
+  </style>
+</head>
+<body>
+  <h1>ARQUITECTURA DE COMPUTADORAS</h1>
+  <h2>QUIERO SABER MÁS</h2>
+  <a href="index.html" class="boton-icono" title="Ir a Index">➜</a>
+
+  <footer>
+    UCE - Creado por Erick Anaguano
+  </footer>
+</body>
+</html>

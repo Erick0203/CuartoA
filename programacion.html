@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Programación en Informática</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #ccc;
+      height: 100px;
+      text-align: center;
+      line-height: 100px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .contenedor {
+      display: flex;
+      height: calc(100vh - 100px);
+    }
+
+    .menu {
+      width: 200px;
+      background-color: #ffff99;
+      padding: 20px;
+    }
+
+    .menu ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .menu ul li {
+      margin: 10px 0;
+    }
+
+    .menu ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .contenido {
+      flex: 1;
+      background-color: #6666ff;
+      color: white;
+      padding: 30px;
+      overflow-y: auto;
+    }
+
+    h2, h3 {
+      color: #82bbf1;
+      margin-top: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid rgb(231, 117, 117);
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .reflexion {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #4444aa;
+      border-left: 5px solid #00ffcc;
+      font-style: italic;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    Programación en Informática
+     <a href="index.html" class="boton-icono" title="Index">➜</a>
+  </header>
+    <center>
+    <nav class="navbar">
+    <a href="Hardware.html" target="_blank"><i class="fas fa-microchip"></i> Hardware</a>
+    <a href="Software.html"><i class="fas fa-code"></i> Software</a>
+    <a href="Ordenador.html"><i class="fas fa-laptop"></i> Ordenador</a>
+    <a href="Programacion.html"><i class="fas fa-keyboard"></i> Programación</a>
+    </nav>
+    </center>
+  <div class="contenedor">
+    <!-- Menú lateral -->
+    <nav class="menu">
+      <h3>Menú</h3>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Hardware</a></li>
+        <li><a href="#">Software</a></li>
+        <li><a href="#">Ordenador</a></li>
+        <li><a href="#">Programación</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="contenido">
+      <h2>¿Qué es la programación?</h2>
+      <p>
+        La programación es el proceso mediante el cual se crean instrucciones que las computadoras pueden entender para ejecutar tareas específicas. Es una herramienta fundamental en informática que permite automatizar procesos, construir aplicaciones, desarrollar videojuegos, sitios web, software de gestión y mucho más.
+      </p>
+
+      <img src="https://img.freepik.com/foto-gratis/vista-lateral-atractivo-software-programacion-desarrolladores-hispanos-que-usa-computadora-mientras-trabaja-casa_662251-988.jpg" alt="Persona programando en computadora"/>
+
+      <h2>Lenguajes de programación populares</h2>
+      <ul>
+        <li>🟢 Python – Ideal para ciencia de datos, IA, automatización.</li>
+        <li>🌐 JavaScript – Usado en desarrollo web del lado del cliente y servidor.</li>
+        <li>☕ Java – Ampliamente usado en aplicaciones móviles y empresariales.</li>
+        <li>💠 C# – Popular en desarrollo de videojuegos y software con Microsoft.</li>
+        <li>⚙️ C/C++ – Base de muchos sistemas operativos, rápido y potente.</li>
+        <li>🐘 PHP – Utilizado en el backend de muchas páginas web.</li>
+      </ul>
+
+      <h2>Características de un buen lenguaje de programación</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Característica</th>
+            <th>Descripción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sintaxis clara</td>
+            <td>Facilita la lectura y escritura del código.</td>
+          </tr>
+          <tr>
+            <td>Portabilidad</td>
+            <td>Se puede usar en distintos sistemas operativos.</td>
+          </tr>
+          <tr>
+            <td>Modularidad</td>
+            <td>Permite dividir el código en partes reutilizables.</td>
+          </tr>
+          <tr>
+            <td>Orientación a objetos</td>
+            <td>Organiza el código en torno a entidades (objetos).</td>
+          </tr>
+          <tr>
+            <td>Documentación</td>
+            <td>Buena disponibilidad de guías y soporte.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>¿Qué es programar?</h2>
+      <iframe src="https://webdesigncusco.com/wp-content/uploads/2022/10/atom-code.png" title="¿Qué es programar?"></iframe>
+
+      <div class="reflexion">
+        <h3>Importante:</h3>
+        <p>
+          Aprender a programar es mucho más que escribir líneas de código. Es desarrollar habilidades de resolución de problemas, pensamiento lógico y creatividad. En un mundo cada vez más digital, programar es una herramienta poderosa que abre puertas en cualquier carrera.
+        </p>
+      </div>
+
+    </main>
+  </div>
+  <center>
+  <footer>
+     <p>UCE - Creado por Erick Anaguano</p>
+     <p>Programación</p>
+  </footer>
+  </center>
+</body>
+</html>

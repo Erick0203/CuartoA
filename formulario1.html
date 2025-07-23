@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Curso de Arquitectura de Computadoras</title>
+  <link rel="stylesheet" href="estilos1.css">
+</head>
+<body>
+
+  <h2>Curso de Arquitectura de Computadoras</h2>
+
+  <div class="img-container">
+    <img src="https://th.bing.com/th/id/OIP.vjyI_79F3e00zxx_4ojN2QHaEO?cb=iwp2&rs=1&pid=ImgDetMain" alt="Arquitectura de Computadoras">
+  </div>
+
+  <form id="formComputadoras">
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" required>
+
+    <label for="cedula">Cédula de identidad:</label>
+    <input type="text" id="cedula" required>
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" required>
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" required min="16">
+
+    <label for="fecha">Fecha de nacimiento:</label>
+    <input type="date" id="fecha" required>
+
+    <label for="genero">Género:</label>
+    <select id="genero">
+      <option value="masculino">Masculino</option>
+      <option value="femenino">Femenino</option>
+      <option value="otro">Otro</option>
+    </select>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Ej: 123-456-7890" required>
+
+    <label for="nivel">Nivel de conocimiento:</label>
+    <select id="nivel">
+      <option value="principiante">Principiante</option>
+      <option value="intermedio">Intermedio</option>
+      <option value="avanzado">Avanzado</option>
+    </select>
+
+    <label for="tema">Tema de interés principal:</label>
+    <select id="tema">
+      <option value="cpu">CPU y ALU</option>
+      <option value="memoria">Memoria</option>
+      <option value="ensamblador">Lenguaje Ensamblador</option>
+      <option value="sistemas">Sistemas Operativos</option>
+    </select>
+
+    <label for="proyecto">Idea para tu proyecto final:</label>
+    <textarea id="proyecto" placeholder="Describe brevemente tu idea..."></textarea>
+
+    <label>¿Tienes conocimientos previos de electrónica?</label>
+    <input type="radio" name="electronica" value="si"> Sí
+    <input type="radio" name="electronica" value="no" checked> No
+
+    <label for="componentes">Componentes que has usado:</label>
+    <input type="text" id="componentes" placeholder="Ej: Arduino, Raspberry Pi, RAM, etc.">
+
+    <label>
+      <input type="checkbox" id="terminos"> Acepto los términos y condiciones
+    </label>
+      <center>
+    <button type="button" id="btnEnviar">Enviar</button>
+    </center>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
